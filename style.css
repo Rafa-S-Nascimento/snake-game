@@ -8,17 +8,23 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: auto;
+    height: 100vh;
 }
 canvas {
-    width: 500px;
-    height: 500px;
+    /* width: 500px; */
+    width: 33vw;
+    min-width: 500px;
+    height: 80vh;
     image-rendering: pixelated;
     border: 2px solid gray;
     margin: 0 auto;
 }
 .placar {
-    width: 500px;
-    height: 115px;
+    /* width: 500px; */
+    height: 18.73vh;
+    width: 33vw;
+    min-width: 500px;
     border: 2px solid gray;
     margin: 0 auto;
     background-color: black;
@@ -54,6 +60,7 @@ button {
 }
 span {
     text-align: center;
+    background-repeat: n;
 }
 button:hover {
     scale: 1.1;
@@ -74,4 +81,18 @@ button:hover {
     transform: translate(-50%, -50%);
     transition: all 500ms;
     display: none;
+}
+
+@media screen and (min-width: 1370px) {
+    body {
+        padding: 20px;
+    }
+    canvas {
+        height: 60vh;
+        width: 33vw;
+    }
+    .placar {
+        height: 15vh;
+        width: 33vw;
+    }
 }

@@ -50,6 +50,7 @@ pause.addEventListener("click", pausar);
 pontos.textContent = placar;
 record.textContent = localStorage.getItem("record");
 document.body.style.backgroundImage = `linear-gradient(${mudarBackground()}, ${mudarBackground()})`;
+document.body.style.backgroundRepeat = "no-repeat";
 
 ctx.fillStyle = "black";
 ctx.fillRect(0, 0, tela.width, tela.height);
@@ -88,6 +89,7 @@ function game() {
         atualizarRecord(placar);
         exibirPontos(placar);
         document.body.style.backgroundImage = `linear-gradient(${mudarBackground()}, ${mudarBackground()})`;
+        document.body.style.backgroundRepeat = "no-repeat";
     }
 
     if (body.length > tamanho) {
