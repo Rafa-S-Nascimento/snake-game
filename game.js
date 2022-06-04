@@ -143,8 +143,6 @@ function atualizarRecord(pontos) {
 }
 
 function pausar() {
-    console.log(this);
-
     if ((velocidadeX != 0) | (velocidadeY != 0)) {
         if (this.textContent == "Pause") {
             this.textContent = "Resume";
